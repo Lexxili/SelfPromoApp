@@ -10,4 +10,6 @@
     <string name="button_text_preview">Preview Message</string>
 
     <string name="button_text_send">Send Message</string>
+    <string name="spinner_entry_job1">Android Developer</string>
+    <string name="spinner_entry_job2">Java Developer</string>
 </resources>

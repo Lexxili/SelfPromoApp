@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
             onPreviewClicked()
         }
 
-        val spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, arrayOf("Android Developer", "Java Developer"))
+        val spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, arrayOf(
+            getString(R.string.spinner_entry_job1), getString(R.string.spinner_entry_job2)))
         binding.spinnerJobTitle.adapter = spinnerAdapter
     }
 

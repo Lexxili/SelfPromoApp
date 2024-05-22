@@ -32,7 +32,7 @@ class PreviewActivity : AppCompatActivity() {
         //        val contactName: String? = intent.getStringExtra("Contact Name:") //for transmitting various data between the views
         //        val jobTitle: String? = intent.getStringExtra("Job Title:")
 
-        //todo fix outdated
+        //because of the use of android 24, getSerializableExtra is necessary
         message = intent.getSerializableExtra("Message") as Message // it is a cast
 
         messagePreviewText = """
@@ -50,6 +50,7 @@ class PreviewActivity : AppCompatActivity() {
 
         binding.textViewMessage.text = messagePreviewText
     }
+
     private fun setupButton() {
         binding.buttonSendMessage.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO).apply {
