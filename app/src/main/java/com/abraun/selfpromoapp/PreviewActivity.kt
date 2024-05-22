@@ -1,5 +1,7 @@
 package com.abraun.selfpromoapp
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.abraun.selfpromoapp.databinding.ActivityPreviewBinding
@@ -21,6 +23,7 @@ class PreviewActivity : AppCompatActivity() {
         }
 
         displayMessage()
+        setupButton()
 
     }
 
@@ -47,7 +50,14 @@ class PreviewActivity : AppCompatActivity() {
 
         binding.textViewMessage.text = messagePreviewText
     }
-
-    //todo init send button
+    private fun setupButton() {
+        binding.buttonSendMessage.setOnClickListener {
+            val intent = Intent(Intent.ACTION_SENDTO).apply {
+                data = Uri.parse("smsto: ${message.contactNumber}") // this ensures that only sms apps respond
+                putExtra("sms_body", messagePreviewText)
+            }
+            startActivity(intent)
+        }
+    }
 
 }

@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:hint="Contact Name"
+                android:hint="@string/hint_contact_name"
                 android:inputType="textCapWords"
                 tools:text="Example Name"
                 tools:viewBindingIgnore="true"/>
@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:hint="Contact Number"
+                android:hint="@string/hint_contact_number"
                 android:inputType="phone"
                 tools:text="0150556575511"
                 tools:viewBindingIgnore="true"/>
@@ -54,7 +54,7 @@
                 android:id="@+id/edit_text_display_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="My Display Name"
+                android:hint="@string/hint_my_name"
                 android:inputType="textCapWords"
                 tools:viewBindingIgnore="true"/>
 
@@ -65,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
-            android:text="Include Junior" />
+            android:text="@string/check_box_text_include_junior" />
 
         <Spinner
             android:id="@+id/spinner_job_title"
@@ -79,18 +79,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Immediate Start" />
+            android:text="@string/check_box_text_start" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_start_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:hint="Available from date"
+                android:hint="@string/hint_available_from"
                 android:inputType="date"
                 tools:text="29/04/2024"
                 tools:viewBindingIgnore="true"/>
@@ -104,7 +104,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Preview Message" />
+            android:text="@string/button_text_preview" />
 
 
     </LinearLayout>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="top"
     android:padding="48dp"
     tools:context=".PreviewActivity">
 
@@ -22,7 +23,6 @@
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
             android:fontFamily="sans-serif-light"
-            android:text="This is a sample text"
             android:textColor="#212121"
             android:textSize="18sp" />
 
@@ -33,7 +33,7 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send Message"
+        android:text="@string/button_text_send"
         tools:viewBindingIgnore="true" />
 
 </LinearLayout>
