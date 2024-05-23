@@ -36,16 +36,16 @@ class PreviewActivity : AppCompatActivity() {
         message = intent.getSerializableExtra("Message") as Message // it is a cast
 
         messagePreviewText = """
-                Hi ${message.contactName}, 
-                
+                Hi ${message.contactName},
+
                 My Name is ${message.myDisplayName} and I am a ${message.getFullJobDescr()}.
-                
+
                 I have a portfolio of apps to demonstrate my technical skills that I can show on request.
-                
+
                 I am able to start a new position ${message.getAvailability()}.
-                
+
                 Please get in touch if you have any suitable roles for me.
-                
+
                 Thanks and best regards.""".trimIndent()
 
         binding.textViewMessage.text = messagePreviewText

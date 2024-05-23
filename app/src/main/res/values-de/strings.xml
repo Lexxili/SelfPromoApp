@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Selbst-Vermarktungs App</string>
+
+    <string name="hint_contact_name">Kontakt Name</string>
+    <string name="hint_contact_number">Kontakt Nummer</string>
+    <string name="hint_my_name">Mein anzeige Name</string>
+    <string name="check_box_text_include_junior">Inklusive Junior</string>
+    <string name="check_box_text_start">Start sofort</string>
+    <string name="hint_available_from">Verfügbar ab &#8230;</string>
+    <string name="button_text_preview">Textvorschau</string>
+
+    <string name="button_text_send">Senden</string>
+    <string name="spinner_entry_job1">Android Entwickler</string>
+    <string name="spinner_entry_job2">Java Entwickler</string>
+
+    <string name="text_sending"> </string>
+</resources>
